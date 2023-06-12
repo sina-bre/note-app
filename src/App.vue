@@ -4,9 +4,13 @@ export default {};
 </script>
 
 <template>
-  <RouterLink to="/">Notes</RouterLink> ||
-  <RouterLink to="stats">Stats</RouterLink>
+  <v-btn> <RouterLink to="/">Notes</RouterLink></v-btn>
+  <v-btn><RouterLink to="stats">Stats</RouterLink></v-btn>
   <RouterView />
 </template>
 
-<style scoped></style>
+<style>
+a {
+  text-decoration: none;
+}
+</style>
